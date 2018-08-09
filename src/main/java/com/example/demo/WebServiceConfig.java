@@ -41,8 +41,8 @@ public class WebServiceConfig {
     public DefaultWsdl11Definition defaultWsdl11Definition(XsdSchema studentSchema){
         DefaultWsdl11Definition definition = new DefaultWsdl11Definition();
         definition.setPortTypeName("StudentPort");
-        definition.setTargetNamespace("SPWS.com/students"); /**  - Default name space *//*
-        definition.setLocationUri("/ws"); /**  - The url where we want to expose the wsdl at. *//*
+        definition.setTargetNamespace("SPWS.com/students"); /**  - Default name space */
+        definition.setLocationUri("/ws"); /**  - The url where we want to expose the wsdl at. */
 
         /**
          * We would create WSDL based on the xsd defined here - new SimpleXsdSchema(new ClassPathResource("student-details.xsd"))
